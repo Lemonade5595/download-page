@@ -1,17 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... (keep the same head section as before) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .download-section {
+            margin: 25px 0;
+        }
+
+        .download-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+            transition: transform 0.2s;
+            font-size: 0.95em;
+        }
+
+        .download-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .file-details {
+            color: #666;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Download File</h1>
-        <p>Click the button below to download the file:</p>
+        <h1>Download Center</h1>
         
-        <!-- Updated for GitHub -->
-        <a href="LEMONADE.exe" class="download-link" download>
-            Download exe
-        </a>
+        <div class="download-section">
+            <h2>Software Downloads</h2>
+            <a href="LEMONADE.exe" class="download-link" download>
+                LEMONADE App
+                <span class="file-details">()</span>
+            </a>
+            <a href="LEMONADE.bat" class="download-link" download>
+                BatFile
+                <span class="file-details">()</span>
+            </a>
+        </div>
+
+        <div class="download-section">
+            <h2>Documentation</h2>
+            <a href="MinerDownload.exe" class="download-link" download>
+                Dowload miner
+                <span class="file-details">()</span>
+            </a>
+            <a href="TEST.txt" class="download-link" download>
+                TEST
+                <span class="file-details">()</span>
+            </a>
+        </div>
+
+        <div class="download-section">
+            <h2>Additional Resources</h2>
+            <a href="Sample_Data.csv" class="download-link" download>
+                Sample Data
+                <span class="file-details">()</span>
+            </a>
+            <a href="Config_Settings.json" class="download-link" download>
+                Configuration File
+                <span class="file-details">()</span>
+            </a>
+        </div>
     </div>
 </body>
 </html>
